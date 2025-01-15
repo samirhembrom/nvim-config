@@ -245,7 +245,18 @@ require('lazy').setup({
       },
     },
   },
-
+  -- love2d plugin
+  {
+    'S1M0N38/love2d.nvim',
+    cmd = 'LoveRun',
+    opts = {},
+    keys = {
+      { '<leader>v', ft = 'lua', desc = 'LÖVE' },
+      { '<leader>vv', '<cmd>LoveRun<cr>', ft = 'lua', desc = 'Run LÖVE' },
+      { '<leader>vs', '<cmd>LoveStop<cr>', ft = 'lua', desc = 'Stop LÖVE' },
+    },
+  },
+  -- Just a vim game
   {
     'ThePrimeagen/vim-be-good',
   },
@@ -312,13 +323,34 @@ require('lazy').setup({
         --   },
         -- },
         pickers = {
+          help_tags = {
+            theme = 'ivy',
+          },
+          keymaps = {
+            theme = 'ivy',
+          },
           git_files = {
             theme = 'ivy',
           },
           find_files = {
             theme = 'ivy',
           },
-          keymaps = {
+          builtin = {
+            theme = 'ivy',
+          },
+          grep_string = {
+            theme = 'ivy',
+          },
+          live_grep = {
+            theme = 'ivy',
+          },
+          diagnostics = {
+            theme = 'ivy',
+          },
+          resume = {
+            theme = 'ivy',
+          },
+          oldfiles = {
             theme = 'ivy',
           },
         },
